@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A13AB19E28E8D45D00141759 /* StatusbarWeatherAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13AB19D28E8D45D00141759 /* StatusbarWeatherAppApp.swift */; };
-		A13AB1A028E8D45D00141759 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13AB19F28E8D45D00141759 /* ContentView.swift */; };
 		A13AB1A228E8D45E00141759 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A13AB1A128E8D45E00141759 /* Assets.xcassets */; };
 		A13AB1A528E8D45E00141759 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A13AB1A428E8D45E00141759 /* Preview Assets.xcassets */; };
+		A13AB1AD28E8D4DB00141759 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13AB1AC28E8D4DB00141759 /* StatusBarController.swift */; };
+		A13AB1AF28E8D98B00141759 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13AB1AE28E8D98B00141759 /* ContentView.swift */; };
+		A13AB1B128E8D9CB00141759 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13AB1B028E8D9CB00141759 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A13AB19A28E8D45D00141759 /* StatusbarWeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StatusbarWeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A13AB19D28E8D45D00141759 /* StatusbarWeatherAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusbarWeatherAppApp.swift; sourceTree = "<group>"; };
-		A13AB19F28E8D45D00141759 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A13AB1A128E8D45E00141759 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A13AB1A428E8D45E00141759 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A13AB1A628E8D45E00141759 /* StatusbarWeatherApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StatusbarWeatherApp.entitlements; sourceTree = "<group>"; };
+		A13AB1AC28E8D4DB00141759 /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
+		A13AB1AE28E8D98B00141759 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A13AB1B028E8D9CB00141759 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +54,12 @@
 		A13AB19C28E8D45D00141759 /* StatusbarWeatherApp */ = {
 			isa = PBXGroup;
 			children = (
-				A13AB19D28E8D45D00141759 /* StatusbarWeatherAppApp.swift */,
-				A13AB19F28E8D45D00141759 /* ContentView.swift */,
+				A13AB1B028E8D9CB00141759 /* AppDelegate.swift */,
+				A13AB1AE28E8D98B00141759 /* ContentView.swift */,
 				A13AB1A128E8D45E00141759 /* Assets.xcassets */,
 				A13AB1A628E8D45E00141759 /* StatusbarWeatherApp.entitlements */,
 				A13AB1A328E8D45E00141759 /* Preview Content */,
+				A13AB1AC28E8D4DB00141759 /* StatusBarController.swift */,
 			);
 			path = StatusbarWeatherApp;
 			sourceTree = "<group>";
@@ -139,8 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A13AB1A028E8D45D00141759 /* ContentView.swift in Sources */,
-				A13AB19E28E8D45D00141759 /* StatusbarWeatherAppApp.swift in Sources */,
+				A13AB1B128E8D9CB00141759 /* AppDelegate.swift in Sources */,
+				A13AB1AD28E8D4DB00141759 /* StatusBarController.swift in Sources */,
+				A13AB1AF28E8D98B00141759 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +278,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,6 +306,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
